@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .conrainer {
+            width: 500px;
+            height: 100%;
+            margin: auto;
+        }
+
+        .title {
+            font-size: 50px;
+            font-weight: 700;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .table th {
+            background: blue;
+            color: white;
+        }
+
+        .table th,
+        .table td {
+            padding: 8px;
+            border: 1px solid rgb(7, 7, 4)
+        }
+
+        .table tbody tr:nth-child(even) td {
+            background: rgb(241, 241, 168);
+        }
+
+        .table tbody tr:hover td {
+            background: gray;
+            color: aquamarine;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conrainer">
+        <h1 class="title">學生成績表</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>分數</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>學生</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>學生</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>學生</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>學生</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>學生</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>學生</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>學生</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

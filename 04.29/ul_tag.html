@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul li 練習</title>
+</head>
+<style>
+    *,
+    *::after,
+    *::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        scroll-behavior: smooth;
+
+    }
+
+    a {
+        color: indianred;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+
+    .header {
+        background: rgb(8, 8, 77);
+        height: 100px;
+        color: rgb(250, 231, 207);
+        position: fixed;
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+    }
+
+    .page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e1f588;
+        font-size: 60px;
+        font-weight: 700;
+        height: 100vh;
+    }
+
+    .page:nth-child(odd) {
+        background: green;
+    }
+
+    .menu>li> {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu>li>ul {
+        position: absolute;
+        background: #175cc5;
+        width: 300px;
+        top: 80px;
+        display: none;
+    }
+
+    .menu>li>ul>li {
+        padding: 15px;
+    }
+
+    .menu>li:hover {
+        background: blue;
+    }
+
+    .menu>li:hover>ul {
+        display: black;
+    }
+</style>
+
+
+<body>
+    <div class="header">
+        <ul class="menu">
+            <li><a href="#cat">cat</a>
+                <ul>
+                    <li><a href="#">cat1</a>
+                    </li>
+                    <ul>
+                        <li><a href="#">cat2</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">cat3</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">cat4</a>
+                        </li>
+                    </ul>
+                </ul>
+            </li>
+            <li><a href="#dog">dog</a>
+                <ul>
+                    <li><a href="#">dog1</a>
+                    </li>
+                    <ul>
+                        <li><a href="#">dog2</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">dog3</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">dog4</a>
+                        </li>
+                    </ul>
+                </ul>
+            </li>
+            <li><a href="#bird">bird</a>
+                <ul>
+                    <li><a href="#">bird1</a>
+                    </li>
+                    <ul>
+                        <li><a href="#">bird2</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">bird3</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">bird4</a>
+                        </li>
+                    </ul>
+                </ul>
+            </li>
+            <li><a href="#fish">fish</a>
+                <ul>
+                    <li><a href="#">fish1</a>
+                    </li>
+                    <ul>
+                        <li><a href="#">fish2</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">fish3</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">fish4</a>
+                        </li>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <div class="page" id="cat">cat</div>
+    <div class="page" id="dog">dog</div>
+    <div class="page" id="bird">bird</div>
+    <div class="page" id="fish">fish</div>
+</body>
+
+</html>
