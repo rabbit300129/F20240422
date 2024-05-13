@@ -1,0 +1,49 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 255, 128);
+    margin-bottom: 20px;
+}
+
+.p-full {
+    padding: 10px;
+}
+
+.p-two {
+    padding: 10px 20px;
+}
+
+.p-top {
+    padding-top: 10px;
+}
+
+.p-left {
+    padding-left: 10px;
+}
+
+.p-bottom {
+    padding-bottom: 10px;
+}
+
+.p-right {
+    padding-right: 10px;
+}
+
+.p-rand {
+    padding: 10px 20px 30px 40px;
+}
+
+.btn {
+    display: inline;
+    padding: 10px 20px;
+    background-color: rgb(3, 91, 133);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background: rgb(68, 194, 253);
+}
