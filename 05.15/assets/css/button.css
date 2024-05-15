@@ -1,0 +1,61 @@
+.button-group {
+    margin-bottom: 20px;
+}
+
+.btn .primary {
+    background: rgb(127, 127, 247);
+    color: blanchedalmond;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(5, 96, 124);
+    color: antiquewhite;
+}
+
+.btn:hover {
+    background: rgb(3, 116, 150);
+    color: antiquewhite;
+}
+
+.btn.primary {
+    background: green;
+    color: antiquewhite;
+}
+
+.btn.primary:hover {
+    background: rgb(2, 209, 2);
+    color: antiquewhite;
+}
+
+.btn.success {
+    background: rgb(255, 220, 20);
+    color: rgb(105, 63, 7);
+}
+
+.btn.success:hover {
+    background: rgb(253, 230, 97);
+    color: rgb(105, 63, 7);
+}
+
+.btn.danger {
+    background: rgb(253, 97, 245);
+    color: antiquewhite;
+}
+
+.btn.danger:hover {
+    background: rgb(252, 135, 246);
+    color: antiquewhite;
+}
+
+.btn.dark {
+    background: rgb(14, 0, 13);
+    color: antiquewhite;
+}
+
+.btn.dark:hover {
+    background: rgb(70, 1, 65);
+    color: antiquewhite;
+}
