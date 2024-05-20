@@ -1,0 +1,28 @@
+.wrap {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.wrap .item {
+    width: 100px;
+    height: 100px;
+    background: rgb(6, 124, 170);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap .relative {
+    background: green;
+    position: relative;
+    z-index: 1;
+}
+
+.wrap .absolute {
+    background: yellow;
+    color: blueviolet;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.5;
+}

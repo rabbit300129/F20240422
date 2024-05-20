@@ -1,0 +1,66 @@
+.accrodion-wrap {
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid black;
+
+}
+
+.accrodion-wrap .accrodion-item {
+    margin-bottom: 5px;
+}
+
+.accrodion-wrap .accrodion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(9, 94, 163);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 8px;
+}
+
+.accrodion-wrap .accrodion-body {
+    background: rgb(77, 169, 245);
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+
+.accrodion-wrap .accrodion-close {
+    display: none;
+}
+
+.accrodion-wrap .accrodion-switch {
+    display: none;
+}
+
+.accrodion-wrap .accrodion-switch:checked~.accrodion-header .accrodion-open {
+    display: none;
+}
+
+.accrodion-wrap .accrodion-switch:checked~.accrodion-header .accrodion-close {
+    display: block;
+}
+
+.accrodion-wrap .accrodion-switch:checked~.accrodion-body {
+    display: block;
+}
+
+.accrodion-wrap .accrodion-switch:checked~.accrodion-body {
+    display: block;
+}
+
+.accrodion-wrap .accrodion-switch:checked~.accrodion-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.accrodion-wrap .accrodion-switch:checked~.accrodion-body {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
