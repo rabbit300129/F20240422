@@ -1,0 +1,48 @@
+.d-block {
+    display: block;
+    background: green;
+    color: bisque;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.d-inline {
+    display: inline;
+    background: rgb(7, 65, 190);
+    color: bisque;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.d-inline-block {
+    display: inline-block;
+    background: rgb(153, 7, 190);
+    color: bisque;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.d-flex {
+    display: flex;
+    background: rgb(190, 7, 53);
+    color: bisque;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+    background: rgb(190, 111, 7);
+    color: bisque;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
