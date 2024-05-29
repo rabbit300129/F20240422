@@ -78,6 +78,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.541);
+    z-index: 1;
 }
 
 .page-wrap {
@@ -88,6 +89,151 @@ body {
 
 .page-content {
 
-    background: blue;
+    background: rgba(35, 35, 56, 0.438);
     color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* padding: 30px; */
+}
+
+.page-content>div {
+    padding: 15px;
+}
+
+/* .addus {
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.addus::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 150px);
+    width: 0;
+    height: 3px;
+    border-left: 100px solid rgb(184, 2, 144);
+    border-right: 200px solid white;
+} */
+
+.addus2 {
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: 3px solid white;
+    border-image: linear-gradient(to right, rgb(184, 2, 144) 30%, white 0%)1;
+    margin-bottom: 15px;
+}
+
+.page-content>div {
+    min-height: 300px;
+    position: relative;
+}
+
+/* .page-content>div:first-child {
+    border-right: 3px dashed white;
+    padding-right: 30px;
+} */
+
+.page-content>div:first-child {
+    padding-right: 30px;
+}
+
+.page-content>div:first-child::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 5%;
+    height: 90%;
+    right: -2px;
+    border-left: 5px dashed white;
+}
+
+.page-content>div:last-child {
+    padding-left: 30px;
+}
+
+.page-content .text {
+    line-height: 30px;
+    text-align: justify;
+
+}
+
+.form-item {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-item input {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    padding: 0 50px;
+    font-size: 1.3rem;
+}
+
+.form-item label {
+    position: absolute;
+    color: gray;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.form-item-good {
+    width: 100%;
+    height: 40px;
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: gray;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+
+.form-item-good input {
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    margin-left: 5px;
+    padding-right: 12px;
+    font-size: 1.3rem;
+    background: transparent;
+}
+
+.btn {
+    padding: 5px 5px;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    background: rgb(0, 151, 25);
+    color: bisque;
+}
+
+.btn.success {
+    background: rgb(14, 172, 85);
+    color: #fff;
+}
+
+.btn.success:hover {
+    background: rgb(26, 204, 106);
+}
+
+.item-wrap {
+    margin-top: 25px;
+}
+
+.form-fn {
+    text-align: right;
 }
